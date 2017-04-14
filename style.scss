@@ -1,0 +1,56 @@
+
+body {
+	background-image: url("http://parkresto.com/wp-content/themes/parkrestaurant/images/11onlinereservationpark.jpg");
+}
+
+//The header that stretches across the page
+.col-md-12.header {
+	height: 200px;
+	overflow: auto;
+}
+
+
+//The tabular bar to the left of the page 
+.col-md-8 {
+	.tab {
+	    overflow: hidden;
+	    background-color: inherit;
+
+		.tablist {
+			color: white;
+			background-color: inherit;
+		    float: left;
+		    border: none;
+		    outline: none;
+		    cursor: pointer;
+		    padding: 14px 16px;
+		    transition: 0.3s;
+
+		    &:hover {
+		    	background-color: #ddd;
+		    }
+		}
+	}
+
+	.tabitem {
+		padding-left: 15px;
+
+		h2, p {
+			color: white;
+		}
+
+	}
+}
+
+
+
+
+
+//The bar to the right side of the page
+.col-md-4.sidebar {
+}
+
+
+.visible {
+	display: block;
+}
