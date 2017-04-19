@@ -1,12 +1,25 @@
 
 body {
+	font-family: Garamond;
 	background-image: url("http://parkresto.com/wp-content/themes/parkrestaurant/images/11onlinereservationpark.jpg");
 }
 
 //The header that stretches across the page
-.col-md-12.header {
-	height: 200px;
+.col-md-12 {
+	height: 250px;
 	overflow: auto;
+	
+	.jumbotron {
+		background-color: inherit;
+
+		h1 {
+			font-family: Garamond;
+			color: white;
+			text-align: center;
+			vertical-align: middle;
+		}
+	}	
+	
 }
 
 
@@ -34,23 +47,28 @@ body {
 
 	.tabitem {
 		padding-left: 15px;
+		width: 50%;
 
-		h2, p {
+		h2, h3, p, li {
 			color: white;
 		}
 
 	}
 }
 
-
-
-
-
 //The bar to the right side of the page
 .col-md-4.sidebar {
+
+	h1, li {
+		color: white;
+	}
 }
 
 
-.visible {
+.inactive {
+	display: none;
+}
+
+.active {
 	display: block;
 }

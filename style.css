@@ -1,9 +1,17 @@
 body {
+  font-family: Garamond;
   background-image: url("http://parkresto.com/wp-content/themes/parkrestaurant/images/11onlinereservationpark.jpg"); }
 
-.col-md-12.header {
-  height: 200px;
+.col-md-12 {
+  height: 250px;
   overflow: auto; }
+  .col-md-12 .jumbotron {
+    background-color: inherit; }
+    .col-md-12 .jumbotron h1 {
+      font-family: Garamond;
+      color: white;
+      text-align: center;
+      vertical-align: middle; }
 
 .col-md-8 .tab {
   overflow: hidden;
@@ -20,11 +28,18 @@ body {
     .col-md-8 .tab .tablist:hover {
       background-color: #ddd; }
 .col-md-8 .tabitem {
-  padding-left: 15px; }
-  .col-md-8 .tabitem h2, .col-md-8 .tabitem p {
+  padding-left: 15px;
+  width: 50%; }
+  .col-md-8 .tabitem h2, .col-md-8 .tabitem h3, .col-md-8 .tabitem p, .col-md-8 .tabitem li {
     color: white; }
 
-.visible {
+.col-md-4.sidebar h1, .col-md-4.sidebar li {
+  color: white; }
+
+.inactive {
+  display: none; }
+
+.active {
   display: block; }
 
 /*# sourceMappingURL=style.css.map */
