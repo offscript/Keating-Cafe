@@ -13,10 +13,10 @@ body {
       text-align: center;
       vertical-align: middle; }
 
-.col-sm-8 .tab {
+.col-xs-8 .tab {
   overflow: hidden;
   background-color: inherit; }
-  .col-sm-8 .tab .tablist {
+  .col-xs-8 .tab .tablist {
     color: white;
     background-color: inherit;
     float: left;
@@ -25,23 +25,23 @@ body {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s; }
-    .col-sm-8 .tab .tablist:hover {
+    .col-xs-8 .tab .tablist:hover {
       background-color: #ddd; }
-.col-sm-8 .tabitem {
+.col-xs-8 .tabitem {
   padding-left: 25px;
   width: 50%; }
-  .col-sm-8 .tabitem h2, .col-sm-8 .tabitem h3, .col-sm-8 .tabitem p, .col-sm-8 .tabitem li {
+  .col-xs-8 .tabitem h2, .col-xs-8 .tabitem h3, .col-xs-8 .tabitem p, .col-xs-8 .tabitem li {
     color: white; }
-  .col-sm-8 .tabitem .section {
+  .col-xs-8 .tabitem .section {
     width: 50%;
     display: inline-block;
     float: left; }
-    .col-sm-8 .tabitem .section:hover li {
+    .col-xs-8 .tabitem .section:hover li {
       color: #60d2ff; }
-  .col-sm-8 .tabitem #darker:hover li {
+  .col-xs-8 .tabitem #darker:hover li {
     color: black; }
 
-.col-sm-4.sidebar h1, .col-sm-4.sidebar li {
+.col-xs-4.sidebar h1, .col-xs-4.sidebar li {
   color: white; }
 
 .inactive {

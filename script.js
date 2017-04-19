@@ -21,15 +21,15 @@ $(document).ready( function() {
 		 **/
 
 		// when the page loads, hide tabitems, show about tabitem
-		$('.col-sm-8').find('.tabitem').hide();
-		$('.col-sm-8').find('#about').show();
+		$('.col-xs-8').find('.tabitem').hide();
+		$('.col-xs-8').find('#about').show();
 
 
 		//on-click show the corresponding tab
 		$('.tablist').on('click', function() {
-			$('.col-sm-8').find('.tabitem').hide();
+			$('.col-xs-8').find('.tabitem').hide();
 			var requested_tab = $(this).data("tab"); //get the tab name
-			$('.col-sm-8').find(requested_tab).show();
+			$('.col-xs-8').find(requested_tab).show();
 		}); 
 		
 });
