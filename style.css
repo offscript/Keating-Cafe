@@ -2,21 +2,21 @@ body {
   font-family: Garamond;
   background-image: url("http://parkresto.com/wp-content/themes/parkrestaurant/images/11onlinereservationpark.jpg"); }
 
-.col-xs-12 {
+.col-md-12 {
   height: 250px;
   overflow: auto; }
-  .col-xs-12 .jumbotron {
+  .col-md-12 .jumbotron {
     background-color: inherit; }
-    .col-xs-12 .jumbotron h1 {
+    .col-md-12 .jumbotron h1 {
       font-family: Garamond;
       color: white;
       text-align: center;
       vertical-align: middle; }
 
-.col-xs-12.col-md-8 .tab {
+.col-md-8 .tab {
   overflow: hidden;
   background-color: inherit; }
-  .col-xs-12.col-md-8 .tab .tablist {
+  .col-md-8 .tab .tablist {
     color: white;
     background-color: inherit;
     float: left;
@@ -25,29 +25,37 @@ body {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s; }
-    .col-xs-12.col-md-8 .tab .tablist:hover {
-      background-color: #ddd; }
-.col-xs-12.col-md-8 .tabitem {
+    .col-md-8 .tab .tablist:hover {
+      background-color: black;
+      border: 1px solid white; }
+      .col-md-8 .tab .tablist:hover h2, .col-md-8 .tab .tablist:hover h3 {
+        color: #21c640; }
+.col-md-8 .tabitem {
   padding-left: 25px;
   width: 50%; }
-  .col-xs-12.col-md-8 .tabitem h2, .col-xs-12.col-md-8 .tabitem h3, .col-xs-12.col-md-8 .tabitem p, .col-xs-12.col-md-8 .tabitem li {
+  .col-md-8 .tabitem h2, .col-md-8 .tabitem h3, .col-md-8 .tabitem p, .col-md-8 .tabitem li {
     color: white; }
-  .col-xs-12.col-md-8 .tabitem .section {
+  .col-md-8 .tabitem .section {
     width: 50%;
     display: inline-block;
     float: left; }
-    .col-xs-12.col-md-8 .tabitem .section:hover li {
-      color: #60d2ff; }
-  .col-xs-12.col-md-8 .tabitem #darker:hover li {
-    color: black; }
+    .col-md-8 .tabitem .section:hover {
+      background-color: black;
+      border: 1px solid white; }
+      .col-md-8 .tabitem .section:hover h2, .col-md-8 .tabitem .section:hover h3 {
+        color: #21c640; }
+.col-md-8 #about:hover, .col-md-8 #contact:hover {
+  background-color: black;
+  border: 1px solid white; }
+  .col-md-8 #about:hover h2, .col-md-8 #about:hover h3, .col-md-8 #contact:hover h2, .col-md-8 #contact:hover h3 {
+    color: #21c640; }
 
-.col-xs-12.col-md-4 h1, .col-xs-12.col-md-4 li {
+.col-md-4 div:hover {
+  background-color: black;
+  border: 1px solid white; }
+  .col-md-4 div:hover h2, .col-md-4 div:hover h3 {
+    color: #21c640; }
+.col-md-4 h1, .col-md-4 h3, .col-md-4 p {
   color: white; }
-
-.inactive {
-  display: none; }
-
-.active {
-  display: block; }
 
 /*# sourceMappingURL=style.css.map */
