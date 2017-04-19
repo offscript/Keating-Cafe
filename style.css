@@ -7,8 +7,12 @@ body {
   overflow: auto; }
   .col-md-12 .jumbotron {
     background-color: inherit; }
+    .col-md-12 .jumbotron:hover {
+      background-color: black;
+      border: 1px solid white; }
+      .col-md-12 .jumbotron:hover h1, .col-md-12 .jumbotron:hover h2, .col-md-12 .jumbotron:hover h3 {
+        color: #21c640; }
     .col-md-12 .jumbotron h1 {
-      font-family: Garamond;
       color: white;
       text-align: center;
       vertical-align: middle; }
@@ -28,7 +32,7 @@ body {
     .col-md-8 .tab .tablist:hover {
       background-color: black;
       border: 1px solid white; }
-      .col-md-8 .tab .tablist:hover h2, .col-md-8 .tab .tablist:hover h3 {
+      .col-md-8 .tab .tablist:hover h1, .col-md-8 .tab .tablist:hover h2, .col-md-8 .tab .tablist:hover h3 {
         color: #21c640; }
 .col-md-8 .tabitem {
   padding-left: 25px;
@@ -42,18 +46,18 @@ body {
     .col-md-8 .tabitem .section:hover {
       background-color: black;
       border: 1px solid white; }
-      .col-md-8 .tabitem .section:hover h2, .col-md-8 .tabitem .section:hover h3 {
+      .col-md-8 .tabitem .section:hover h1, .col-md-8 .tabitem .section:hover h2, .col-md-8 .tabitem .section:hover h3 {
         color: #21c640; }
 .col-md-8 #about:hover, .col-md-8 #contact:hover {
   background-color: black;
   border: 1px solid white; }
-  .col-md-8 #about:hover h2, .col-md-8 #about:hover h3, .col-md-8 #contact:hover h2, .col-md-8 #contact:hover h3 {
+  .col-md-8 #about:hover h1, .col-md-8 #about:hover h2, .col-md-8 #about:hover h3, .col-md-8 #contact:hover h1, .col-md-8 #contact:hover h2, .col-md-8 #contact:hover h3 {
     color: #21c640; }
 
 .col-md-4 div:hover {
   background-color: black;
   border: 1px solid white; }
-  .col-md-4 div:hover h2, .col-md-4 div:hover h3 {
+  .col-md-4 div:hover h1, .col-md-4 div:hover h2, .col-md-4 div:hover h3 {
     color: #21c640; }
 .col-md-4 h1, .col-md-4 h3, .col-md-4 p {
   color: white; }
