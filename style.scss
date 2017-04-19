@@ -1,11 +1,12 @@
 
 body {
 	font-family: Garamond;
+	//disclaimer: This is not my image
 	background-image: url("http://parkresto.com/wp-content/themes/parkrestaurant/images/11onlinereservationpark.jpg");
 }
 
 //The header that stretches across the page
-.col-md-12 {
+.col-sm-12 {
 	height: 250px;
 	overflow: auto;
 	
@@ -23,8 +24,8 @@ body {
 }
 
 
-//The tabular bar to the left of the page 
-.col-md-8 {
+//The tabular bar to the left of the page, below the header
+.col-sm-8 {
 	.tab {
 	    overflow: hidden;
 	    background-color: inherit;
@@ -45,19 +46,43 @@ body {
 		}
 	}
 
+	//houses all of the items that the tabs correspond to
 	.tabitem {
-		padding-left: 15px;
+		padding-left: 25px;
 		width: 50%;
 
 		h2, h3, p, li {
 			color: white;
 		}
 
+		//the generic class for one of the menu sections
+		.section {
+			width: 50%;
+			display: inline-block;
+			float: left;
+
+			 &:hover {
+
+		    	li {
+		    		color: #60d2ff;
+		    	}
+		    }
+		}
+
+		//the menu list in the bottom right should be a different, darker
+		//color than the other menu lists, as it is still hard to see
+		#darker {
+		 	&:hover {
+		 		li {
+ 					color: black;
+ 				}
+		 	}
+		}	
 	}
 }
 
 //The bar to the right side of the page
-.col-md-4.sidebar {
+.col-sm-4.sidebar {
 
 	h1, li {
 		color: white;

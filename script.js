@@ -19,21 +19,18 @@ $(document).ready( function() {
 		//$('#content').prepend(div1);
 		//$('#content').append(div2);
 		 **/
-		// hide tabitems, show about
-		$('.col-md-8').find('.tabitem').hide();
-		$('.col-md-8').find('#about').show();
+
+		// when the page loads, hide tabitems, show about tabitem
+		$('.col-sm-8').find('.tabitem').hide();
+		$('.col-sm-8').find('#about').show();
 
 
-		//on click go to the corresponding tab
+		//on-click show the corresponding tab
 		$('.tablist').on('click', function() {
-			$('.col-md-8').find('.tabitem').hide();
+			$('.col-sm-8').find('.tabitem').hide();
 			var requested_tab = $(this).data("tab"); //get the tab name
-			$('.col-md-8').find(requested_tab).show();
+			$('.col-sm-8').find(requested_tab).show();
 		}); 
 		
 });
-	//("tab").on('click', function {
-	// switch tabs 
-	//
-	//});
 

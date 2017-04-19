@@ -2,21 +2,21 @@ body {
   font-family: Garamond;
   background-image: url("http://parkresto.com/wp-content/themes/parkrestaurant/images/11onlinereservationpark.jpg"); }
 
-.col-md-12 {
+.col-sm-12 {
   height: 250px;
   overflow: auto; }
-  .col-md-12 .jumbotron {
+  .col-sm-12 .jumbotron {
     background-color: inherit; }
-    .col-md-12 .jumbotron h1 {
+    .col-sm-12 .jumbotron h1 {
       font-family: Garamond;
       color: white;
       text-align: center;
       vertical-align: middle; }
 
-.col-md-8 .tab {
+.col-sm-8 .tab {
   overflow: hidden;
   background-color: inherit; }
-  .col-md-8 .tab .tablist {
+  .col-sm-8 .tab .tablist {
     color: white;
     background-color: inherit;
     float: left;
@@ -25,15 +25,23 @@ body {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s; }
-    .col-md-8 .tab .tablist:hover {
+    .col-sm-8 .tab .tablist:hover {
       background-color: #ddd; }
-.col-md-8 .tabitem {
-  padding-left: 15px;
+.col-sm-8 .tabitem {
+  padding-left: 25px;
   width: 50%; }
-  .col-md-8 .tabitem h2, .col-md-8 .tabitem h3, .col-md-8 .tabitem p, .col-md-8 .tabitem li {
+  .col-sm-8 .tabitem h2, .col-sm-8 .tabitem h3, .col-sm-8 .tabitem p, .col-sm-8 .tabitem li {
     color: white; }
+  .col-sm-8 .tabitem .section {
+    width: 50%;
+    display: inline-block;
+    float: left; }
+    .col-sm-8 .tabitem .section:hover li {
+      color: #60d2ff; }
+  .col-sm-8 .tabitem #darker:hover li {
+    color: black; }
 
-.col-md-4.sidebar h1, .col-md-4.sidebar li {
+.col-sm-4.sidebar h1, .col-sm-4.sidebar li {
   color: white; }
 
 .inactive {
