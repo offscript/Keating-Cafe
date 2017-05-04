@@ -25,7 +25,6 @@ body {
 	.jumbotron {
 		background-color: inherit;
 		@include hover;
-		
 		h1 {
 			color: white;
 			text-align: center;
@@ -37,7 +36,7 @@ body {
 
 
 //The tabular bar to the left of the page, below the header
-.col-md-8 {
+#tabbed {
 	.tab {
 	    overflow: hidden;
 	    background-color: inherit;
@@ -58,7 +57,6 @@ body {
 	//houses all of the items that the tabs correspond to
 	.tabitem {
 		padding-left: 25px;
-		width: 50%;
 
 		h2, h3, p, li {
 			color: white;
@@ -75,18 +73,28 @@ body {
 
 	//added hover for the about and contact sections
 	#about, #contact {
-			@include hover;
-		}
+		@include hover;
+	}
 }
 
-//The bar to the right side of the page
-.col-md-4 {
+//The bar in the center of the page
+#news {
+	padding-top: 10px;
 
-	div {
+	.news_item {
 		@include hover;
 	}
 
 	h1, h3, p {
 		color: white;
+	}
+}
+
+#map_container {
+	padding-top: 30px;
+
+	#map {
+		overflow: auto;
+		height: 400px;
 	}
 }

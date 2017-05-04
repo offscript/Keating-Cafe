@@ -8,12 +8,7 @@ var div1 = "\
 		</div>";
 
 var div2 = "\
-	<div class='row'>\
-	</div";
-
-
-var div3 = "\
-			<div class='col-md-8'>\
+			<div class='col-md-4' id='tabbed'>\
 				<div class='tab'>\
 					<button data-tab='#about' class='tablist'><h2>About</h2></button>\
 					<button data-tab='#menu' class='tablist'><h2>Menu</h2></button>\
@@ -62,21 +57,21 @@ var div3 = "\
 				</div>\
 				<div id='contact' class='tabitem'>\
 					<h3>Reach Me</h3>\
-					<p>at <a href='mailto:twkeating1@gmail.com'>twkeating1@gmail.com</a> and check out the rest of my portfolio <a href='https://offscript.github.io/work/'>here.</a></p>\
+					<p>at <a href='mailto:twkeating1@gmail.com'>twkeating1@gmail.com</a> and check out the rest of my portfolio <a href='https://offscript.github.io/work/' target='_blank'>here.</a></p>\
 				</div>";
 
-var div4 = "\
-	<div class='col-md-4'>\
+var div3 = "\
+	<div class='col-md-4' id='news'>\
 			<h1>News</h1>\
-			<div>\
+			<div class='news_item'>\
 				<h3>4/1/17 Cafe Keating is closed until further notice</h3>\
 				<p>April Fools!</p>\
 			</div>\
-			<div>\
+			<div class='news_item'>\
 				<h3>3/22/17 Proud to Announce Partnership with Thomas Farms</h3>\
 				<p>All meat is now locally sourced!</p>\
 			</div>\
-			<div>\
+			<div class='news_item'>\
 				<h3>3/3/17 Now Open Late Friday and Saturday!</h3>\
 				<p>We'll be open from 6 a.m.-10 p.m.!</p>\
 			</div>\
@@ -84,25 +79,40 @@ var div4 = "\
 	</div>\
 </div>";
 
+var div5 = "\
+	<div class='col-md-4' id='map_container'>\
+			<div id='map'></div>\
+	    		<script>\
+	      			var map;\
+	     			function initMap() {\
+				        map = new google.maps.Map(document.getElementById('map'), {\
+				          center: {lat: -34.397, lng: 150.644},\
+				          zoom: 8\
+				       	});\
+	      			}\
+	    		</script>\
+			<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCDCriuMFTYT8j69w21NwqxK5oxjOCqXOs&callback=initMap' async defer>\
+			</script>\
+		</div>";
+
 
 $(document).ready( function() {
 		// Here I append the major divs one at a time to the page
 		$('.container-fluid').prepend(div1);
-		$('.container-fluid').append(div2);
-		$('.row:last').append(div3);
-		$('.row:last').append(div4);
-		//$('#content').append(div2);
+		$('.row:last').prepend(div3);
+		$('.row:last').prepend(div2);
+		//$('.row:last').append(div5);
 
 		// when the page loads, hide tabitems, show about tabitem
-		$('.col-md-8').find('.tabitem').hide();
-		$('.col-md-8').find('#about').show();
+		$('#tabbed').find('.tabitem').hide();
+		$('#tabbed').find('#about').show();
 
 
 		//on-click show the corresponding tab
 		$('.tablist').on('click', function() {
-			$('.col-md-8').find('.tabitem').hide();
+			$('#tabbed').find('.tabitem').hide();
 			var requested_tab = $(this).data("tab"); //get the tab name
-			$('.col-md-8').find(requested_tab).show();
+			$('#tabbed').find(requested_tab).show();
 		}); 
 		
 });

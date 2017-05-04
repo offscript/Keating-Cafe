@@ -17,10 +17,10 @@ body {
       text-align: center;
       vertical-align: middle; }
 
-.col-md-8 .tab {
+#tabbed .tab {
   overflow: hidden;
   background-color: inherit; }
-  .col-md-8 .tab .tablist {
+  #tabbed .tab .tablist {
     color: white;
     background-color: inherit;
     float: left;
@@ -29,37 +29,44 @@ body {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s; }
-    .col-md-8 .tab .tablist:hover {
+    #tabbed .tab .tablist:hover {
       background-color: black;
       border: 1px solid white; }
-      .col-md-8 .tab .tablist:hover h1, .col-md-8 .tab .tablist:hover h2, .col-md-8 .tab .tablist:hover h3 {
+      #tabbed .tab .tablist:hover h1, #tabbed .tab .tablist:hover h2, #tabbed .tab .tablist:hover h3 {
         color: #21c640; }
-.col-md-8 .tabitem {
-  padding-left: 25px;
-  width: 50%; }
-  .col-md-8 .tabitem h2, .col-md-8 .tabitem h3, .col-md-8 .tabitem p, .col-md-8 .tabitem li {
+#tabbed .tabitem {
+  padding-left: 25px; }
+  #tabbed .tabitem h2, #tabbed .tabitem h3, #tabbed .tabitem p, #tabbed .tabitem li {
     color: white; }
-  .col-md-8 .tabitem .section {
+  #tabbed .tabitem .section {
     width: 50%;
     display: inline-block;
     float: left; }
-    .col-md-8 .tabitem .section:hover {
+    #tabbed .tabitem .section:hover {
       background-color: black;
       border: 1px solid white; }
-      .col-md-8 .tabitem .section:hover h1, .col-md-8 .tabitem .section:hover h2, .col-md-8 .tabitem .section:hover h3 {
+      #tabbed .tabitem .section:hover h1, #tabbed .tabitem .section:hover h2, #tabbed .tabitem .section:hover h3 {
         color: #21c640; }
-.col-md-8 #about:hover, .col-md-8 #contact:hover {
+#tabbed #about:hover, #tabbed #contact:hover {
   background-color: black;
   border: 1px solid white; }
-  .col-md-8 #about:hover h1, .col-md-8 #about:hover h2, .col-md-8 #about:hover h3, .col-md-8 #contact:hover h1, .col-md-8 #contact:hover h2, .col-md-8 #contact:hover h3 {
+  #tabbed #about:hover h1, #tabbed #about:hover h2, #tabbed #about:hover h3, #tabbed #contact:hover h1, #tabbed #contact:hover h2, #tabbed #contact:hover h3 {
     color: #21c640; }
 
-.col-md-4 div:hover {
-  background-color: black;
-  border: 1px solid white; }
-  .col-md-4 div:hover h1, .col-md-4 div:hover h2, .col-md-4 div:hover h3 {
-    color: #21c640; }
-.col-md-4 h1, .col-md-4 h3, .col-md-4 p {
-  color: white; }
+#news {
+  padding-top: 10px; }
+  #news .news_item:hover {
+    background-color: black;
+    border: 1px solid white; }
+    #news .news_item:hover h1, #news .news_item:hover h2, #news .news_item:hover h3 {
+      color: #21c640; }
+  #news h1, #news h3, #news p {
+    color: white; }
+
+#map_container {
+  padding-top: 30px; }
+  #map_container #map {
+    overflow: auto;
+    height: 400px; }
 
 /*# sourceMappingURL=style.css.map */
